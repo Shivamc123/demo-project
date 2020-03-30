@@ -9,7 +9,7 @@ pipeline {
    	}
 	stage('Maven Build'){
 		steps{
-				sh label:'Maven Build of war file', script:'''
+				sh label:'Maven Build of jar file', script:'''
 					mvn clean install -DskipTests=false
 					mvn package
 				'''
